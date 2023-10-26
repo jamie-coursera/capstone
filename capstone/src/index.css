@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button-yellow {
+  border-radius: 2rem;
+  background-color: #F4CE14;
+  color: #495E57;
+  border-color:#F4CE14;
+}
+
+.button-yellow:hover {
+  background-color: #495E57;
+  color:#F4CE14
+}
+
+.container {
+  display:grid;
+  width:100%;
+}
+
+
+.flex {
+  display:flex;
+  align-items: center;
+  justify-content: center 
+  
+}
+
+.flex .element {
+  display:inline-flex;
+  list-style: none;
+  flex:1;
+  gap:1.0vw;
+  position: relative;
+  color:#000000;
+  text-decoration: none;
+  font-weight:500
+}
