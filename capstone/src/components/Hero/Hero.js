@@ -7,6 +7,7 @@ function Hero() {
 
                     <h1 id="title">Little Lemon</h1>
                     <h2 id="descriptor">Chicago</h2>
+                    <br/>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
 
 

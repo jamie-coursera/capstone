@@ -2,58 +2,44 @@
     display:flex;
     justify-content: space-around;
     height:5rem;
-    font-size: 1vw;
-    text-align: center;
-    text-shadow: white 0 0 8px;
+    font-size: min(max(1vw,1rem),20px);
     background-color:#ffffff;
     padding-left: min(15%, 20vw);
     padding-right: min(15%, 20vw);
+
 }
 
 .navBar ul {
     padding-top:2%;
     height:7vh;
-    display:inline-flex;
+    display:flex;
     list-style: none;
     flex:1;
     gap:max(30px,2vw);
-    position: relative;
-    
-    
+
 }
 
-.navBar ul :link {
+.navBar ul :link,
+.navBar ul :visited { /*prevent clicked links being underlined or purple */
     color:#000000;
     text-decoration: none;
-    
 }
 
-.navBar ul :visited {
-    color:#000000; 
-    text-decoration: none;
-}
 
 .navBar li :hover {
-    color:#000000;
-    text-align: center;
     background-color: #f7f7f7;
     font-weight:500;
     border: 3px solid #f7f7f7;
     border-top: 0;
     border-radius: 40px;
-    gap:40px;
- 
 
 }
 
+
 .navBar #logo {
     padding-top:3%;
-    display:inline-flex;
     flex:2;
     height:4rem;
-    padding-right: 5%;
-    position: relative;
-    justify-content: center;
 }
 
 
