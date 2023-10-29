@@ -1,0 +1,97 @@
+#titleBox {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    gap:36.5vw;
+    position: relative;
+    margin:20vh 22.5vw 0 25vw;
+}
+
+#specialstitle {
+    flex:1;
+    font-family:"Markazi Text", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color:#27472f;
+}
+
+.specialsprice {
+    margin:auto 0 auto 0;
+    font-weight: bold;
+    color: #EE9972;
+}
+
+
+
+
+#specialsBox > article > h2 {
+    color: #27472f;
+}
+
+#specialsBox > article > h1 {
+    color: #27472f;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0% ;
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+}
+
+
+
+#specialsBox > article > p {
+    color:#101d13;
+    text-align: justify;
+    
+}
+
+
+#specialsbutton {
+    flex:1;
+}
+
+
+
+#specialsBox > article {
+    display:inline-flexbox;
+    flex: 1 1 auto;
+    background-color: #f7f7f7;
+    align-items: flex-start;
+    border-radius: 16px;
+    padding: 1.5%;
+    margin: 1%;
+
+}
+
+#specialsBox > article > h2 {
+    text-align: center;
+
+}
+
+#specialsBox {
+    display:flex;
+    flex:1;
+    margin: 2vh 25vw 0 25vw;
+}
+
+#specialsBox > article > header {
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    gap:1.25rem;
+}
+
+#specialsBox > article > p > :link {
+    color:#101d13;
+    font-size: 30px;
+    text-align: center;
+}
+.specialsImage {
+    width: 100%;
+    overflow:hidden;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+
+}
