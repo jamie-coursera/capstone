@@ -22,10 +22,10 @@ function Special() {
              <section id="specialsBox">
                 <article>
                     <img src={GreekSalad} alt='a greek salad' className="specialsImage"/>
-                    <header>
+                    <div>
                         <h1>Greek Salad </h1>
                         <span className='specialsprice'>$12.99</span>
-                    </header>
+                    </div>
                     <body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                        
                     </body>
@@ -34,10 +34,10 @@ function Special() {
 
                 <article>
                     <img src={GreekSalad} alt='a greek salad' className="specialsImage"/>
-                    <header>
+                    <div>
                         <h1>Greek Salad </h1>
                         <span className='specialsprice'>$12.99</span>
-                    </header>
+                    </div>
                     <body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </body>
@@ -46,16 +46,17 @@ function Special() {
 
                 <article>
                     <img src={GreekSalad} alt='a greek salad' className="specialsImage"/>
-                    <header>
-                    <h1>Greek Salad </h1>
-                    <span className='specialsprice'>$12.99</span>
-                    </header>
+                    <div>
+                        <h1>Greek Salad </h1>
+                        <span className='specialsprice'>$12.99</span>
+                    </div>
                     <body>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </body>
                     
                 </article>
              </section>
+             <br/><br/>
          </>
     )
 }
