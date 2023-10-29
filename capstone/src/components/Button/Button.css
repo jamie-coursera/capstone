@@ -1,0 +1,25 @@
+:link, :visited {
+  text-decoration: none;
+  color:inherit;
+}
+.button-yellow:hover {
+
+    background-color: #495E57 ;
+    border-color: #495E57;
+    color:#ffffff;
+    outline: 0.4rem solid #F4CE14;
+    transition: 0.75s;
+  }
+
+
+.button-yellow {
+  background-color: #F4CE14;
+  border:0.3rem solid #F4CE14;
+  border-radius:40px;
+  color: #495E57;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family:"Karla",serif;
+  transition: 1s;
+}
+
