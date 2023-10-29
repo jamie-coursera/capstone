@@ -12,17 +12,7 @@ code {
     monospace;
 }
 
-.button-yellow {
-  border-radius: 2rem;
-  background-color: #F4CE14;
-  color: #495E57;
-  border-color:#F4CE14;
-}
 
-.button-yellow:hover {
-  background-color: #495E57;
-  color:#F4CE14
-}
 
 .container {
   display:grid;
@@ -46,4 +36,12 @@ code {
   color:#000000;
   text-decoration: none;
   font-weight:500
+}
+
+
+.page_not_found {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #495e57;
+  color: #ffffff;
 }
