@@ -6,20 +6,20 @@
 
     background-color: #495E57 ;
     border-color: #495E57;
-    color:#ffffff;
+    color:#F4CE14;
     outline: 0.4rem solid #F4CE14;
-    transition: 0.75s;
+    transition: 0.5s;
   }
 
 
 .button-yellow {
   background-color: #F4CE14;
-  border:0.3rem solid #F4CE14;
-  border-radius:40px;
+  border:0.5rem solid #F4CE14;
+  border-radius:16px;
   color: #495E57;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
   font-family:"Karla",serif;
-  transition: 1s;
+  transition: 0.5s;
 }
 
