@@ -19,8 +19,8 @@
 
 }
 
-.navBar ul :link,
-.navBar ul :visited { /*prevent clicked links being underlined or purple */
+.navBar ul:link,
+.navBar ul:visited { /*prevent clicked links being underlined or purple */
     color:#000000;
     text-decoration: none;
 }

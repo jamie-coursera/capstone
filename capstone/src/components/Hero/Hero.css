@@ -41,7 +41,7 @@
 
 #herobox img {
     height:26rem;
-    margin-top:15vh;
+    margin-bottom:-15vh;
     border-radius: 16px;
     width:100%;
     object-fit: cover;
