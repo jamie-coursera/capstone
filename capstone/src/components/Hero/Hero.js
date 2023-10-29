@@ -3,7 +3,7 @@ import ChefImg from '../../assets/restauranfood.jpg'
 import Button from '../Button/Button'
 function Hero() {
     return (
-        <section>
+        <section id='herobox'>
             <article style={{flex:1,paddingLeft:"23vw"}}>
 
                     <h1 id="title">Little Lemon</h1>

@@ -1,4 +1,4 @@
-article > h2 {
+#herobox > article > h2 {
     font-family:"Markazi Text", serif;
     color: #27472f;
     font-weight: 300;
@@ -10,7 +10,7 @@ article > h2 {
 
 }
 
-article > h1 {
+#herobox > article > h1 {
     font-family:"Markazi Text", serif;
     font-size: 3.5rem;
     font-weight: 300;
@@ -21,7 +21,7 @@ article > h1 {
 }
 
 
-article {
+#herobox > article {
     border-radius: 16px;
     padding: 2%;
     margin: 1%;
@@ -30,7 +30,7 @@ article {
 }
 
 
-section {
+#herobox {
     display:flex;
     background-color: #495e57;
     height:40vh;
@@ -39,7 +39,7 @@ section {
 
 }
 
-section img {
+#herobox img {
     height:26rem;
     margin-top:15vh;
     border-radius: 16px;
