@@ -12,31 +12,6 @@ code {
     monospace;
 }
 
-.container {
-  display:grid;
-  width:100%;
-}
-
-
-.flex {
-  display:flex;
-  align-items: center;
-  justify-content: center 
-  
-}
-
-.flex .element {
-  display:inline-flex;
-  list-style: none;
-  flex:1;
-  gap:1.0vw;
-  position: relative;
-  color:#000000;
-  text-decoration: none;
-  font-weight:500
-}
-
-
 .page_not_found {
   text-align: center;
   font-size: 3rem;
