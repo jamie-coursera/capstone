@@ -17,8 +17,8 @@ function Header() {
     
 
     return (
-        <header>
-            <div className="navBar">
+
+            <header className="navBar">
                 <a href="/"> <img src={Logo} alt="Little Lemon's Logo" height="15vh" id="logo"/></a>
                 
             <nav>
@@ -26,9 +26,8 @@ function Header() {
                 {navdata}
             </ul>
             </nav>
-            </div>
-
             </header>
+
             )
     }
 export default Header;
