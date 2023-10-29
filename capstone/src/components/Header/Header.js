@@ -2,7 +2,7 @@ import Logo from '../../assets/logo.png'
 import './Header.css'
 import {useMemo} from 'react'
 import {Link,useLocation} from 'react-router-dom'
-const pages = [{location:'/',name:'Home'},{location:'/about-us',name:"About Us"},{location:'/reserve',name:'Reserve'},{location:'/order',name:'Order'},{name:'Login',location:'/login'}]
+const pages = [{location:'/',name:'Home'},{location:'/about',name:"About Us"},{location:'/reserve',name:'Reserve'},{location:'/order',name:'Order'},{name:'Login',location:'/login'}]
 
 function Header() {
 
