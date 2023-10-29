@@ -24,30 +24,6 @@
 
 
 
-
-#specialsBox > article > h2 {
-    color: #27472f;
-}
-
-#specialsBox > article > h1 {
-    color: #27472f;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 0%;
-    margin-top: 0% ;
-    padding-bottom: 0%;
-    margin-bottom: 1%;
-}
-
-
-
-#specialsBox > article > p {
-    color:#101d13;
-    text-align: justify;
-    
-}
-
-
 #specialsbutton {
     flex:1;
 }
@@ -62,11 +38,6 @@
     border-radius: 16px;
     padding: 1.5%;
     margin: 1%;
-
-}
-
-#specialsBox > article > h2 {
-    text-align: center;
 
 }
 
