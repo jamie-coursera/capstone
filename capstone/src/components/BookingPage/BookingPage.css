@@ -1,0 +1,21 @@
+#booktitle {
+    text-align: center;
+    font-family:"Markazi Text", serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color:#27472f;
+}
+
+#bknform {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#bknele {
+    width: auto;
+    padding:5px;
+    height:auto;
+
+}
+
+

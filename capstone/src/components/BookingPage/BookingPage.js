@@ -1,5 +1,6 @@
 import BookingForm from './BookingForm.js';
 import {useReducer, useState} from 'react'
+import './BookingPage.css'
 function BookingPage() {
 
     function updateTimes(state) {
@@ -17,8 +18,15 @@ function BookingPage() {
     const [availableTimes,dispatch] = useReducer(updateTimes,date,initlializeTimes);
     return (
         <>
-        <title>Reserve a Table</title>
-        <BookingForm availableTimes={availableTimes} dateta={{date,setDate} /*this is an object abbreviation which means {date:date,setDate:setDate}*/}/> 
+        <div id="booktitle">Reserve a Table</div>
+        <span id="bknform">
+            <span id="bknele">
+            <BookingForm availableTimes={availableTimes} dateta={{date,setDate} /*this is an object abbreviation which means {date:date,setDate:setDate}*/}/> 
+            </span>
+        </span>
+        <br/>
+        <br/>
+        <br/>
         </>
     )
 }

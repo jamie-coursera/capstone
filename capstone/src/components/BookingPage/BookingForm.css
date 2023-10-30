@@ -1,0 +1,61 @@
+.field {
+    display:flex;
+    font-size:1rem;
+    height:2rem;
+    flex:1;
+    outline: 0.05rem solid #a4a4a4;
+    font-family:"Karla",serif;
+    border-radius: 4px ;
+    margin-bottom: 2vh;
+    border:0;
+}
+
+input, select {
+    width:25rem
+}
+
+:link, :visited {
+    text-decoration: none;
+    color:inherit;
+  }
+#submitBtn:hover {
+  
+      background-color: #495E57 ;
+      border-color: #495E57;
+      color:#F4CE14;
+      -moz-outline-radius: 16px;
+      transition: 0.5s;
+    }
+  
+  
+#submitBtn {
+    background-color: #F4CE14;
+    border:0.5rem solid #F4CE14;
+    border-radius:16px;
+    color: #495E57;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family:"Karla",serif;
+    transition: 0.5s;
+  }
+  
+  
+
+
+.field:hover {
+    outline-color: #495e57;
+    transition: 0.5s;
+}
+
+
+.section > label {
+    font-family:"Karla",serif;
+}
+
+
+
+#bookingForm {
+    justify-content: center;
+    display:flexbox;
+    gap:6rem;
+}
