@@ -8,6 +8,7 @@
     border-color: #495E57;
     color:#F4CE14;
     outline: 0.4rem solid #F4CE14;
+    -moz-outline-radius: 16px;
     transition: 0.5s;
   }
 
