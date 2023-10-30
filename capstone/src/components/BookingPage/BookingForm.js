@@ -28,8 +28,8 @@ function BookingForm({availableTimes,dateta:{date,setDate}}) {
     <section>
     <label htmlFor ="occasion">Occasion</label>
     <select id="occasion" className="field" value={occasion.value} onChange={(e) => {setOccasion({...occasion,value:e.target.value})}}>
-        <option>Birthday</option>
-        <option>Anniversary</option>
+        <option key="birthday">Birthday</option>
+        <option key="anniversary">Anniversary</option>
     </select>
     </section>
     <section>
