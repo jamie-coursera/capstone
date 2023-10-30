@@ -1,0 +1,65 @@
+#vouchtitle {
+    flex:1;
+    font-family:"Markazi Text", serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin:auto auto auto 25vw;
+    color:#ffffff
+}
+
+#vouchbox {
+    background-color: #495e57;
+    padding: 2vh 25vw 0 25vw;
+}
+
+#vouchesContainer {
+    display:inline-flex;
+    flex: 1;
+}
+
+#vouchesContainer > section {
+    display:flex;
+    flex:1;
+}
+
+#vouchesContainer > article {
+    display:inline-flexbox;
+    flex: 1 1 auto;
+    background-color: #f7f7f7;
+    align-items: flex-start;
+    border-radius: 16px;
+    padding: 1.5%;
+    margin: 1%;
+
+}
+
+#vouchesContainer > article > div {
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    gap:1.25rem;
+}
+
+.vouch-img {
+    width: 100%;
+    overflow:hidden;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.rating {
+    margin:auto 0 auto 0;
+    font-weight: bold;
+    color:#333333;
+    border:3px solid #FBDABB;
+    background-color: #FBDABB;
+    border-radius: 16px;
+    border-top: 0;
+    border-bottom:0;
+}
+
+.rating > img {
+    width:16px;
+    height:16px
+}
+
