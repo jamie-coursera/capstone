@@ -19,18 +19,18 @@ function BookingForm({availableTimes,dateta:{date,setDate},setCompleted,dispatch
         
     <section>
         <label htmlFor ="res-date" >Date</label>
-        <input type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value}); dispatch(new Date(e.target.value))}}/>
+        <input required type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value}); dispatch(new Date(e.target.value))}}/>
     </section>
     <section>
         <label htmlFor ="res-time">Time</label>
-        <select id="res-time" className="field" value={time.value} onChange={(e) => {setTime({...time,value:e.target.value})}}>
+        <select required id="res-time" className="field" value={time.value} onChange={(e) => {setTime({...time,value:e.target.value})}}>
             {availableTimes.map(a => <option>{a}</option>)}
     </select>
     </section>
     
     <section>
     <label htmlFor="guests">Number of guests</label>
-    <input type="number" className="field" placeholder="1" min="1" max="10" id="guests" value={guests.value} onChange={(e) => {setGuests({...guests,value:e.target.value})}}/>
+    <input required type="number" className="field" placeholder="1" min="1" max="10" id="guests" value={guests.value} onChange={(e) => {setGuests({...guests,value:e.target.value})}}/>
     </section>
     <section>
     <label htmlFor ="occasion">Occasion</label>
