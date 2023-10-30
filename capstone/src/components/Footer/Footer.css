@@ -1,0 +1,57 @@
+footer {
+    padding-top:5vh;
+    background-color: #495E57;
+    justify-content: center;
+    text-align: center;
+}
+
+.linkSection {
+    display:inline-flex;
+    flex:1;
+    list-style: none;
+    height:20vh;
+    gap:5vw;
+}
+
+.linkSection:link {
+    text-decoration: none;
+    color:inherit;
+}
+
+.link > ul {
+    list-style: none;
+    padding-left:0;
+}
+
+.link > h2 {
+    font-family:"Markazi Text", serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+    color:#ffffff
+}
+
+.linkSection > .link {
+    color:#ffffff;
+    font-family:"Karla",serif;
+    display:inline-flexbox;
+    flex:1 1 auto;
+    align-items: flex-start;
+    text-align:left;
+    font-weight: 350;
+}
+.link > ul > li {
+    margin-bottom: 0.1rem;
+}
+
+.link > ul > :hover {
+    transition:0.5s;
+    color:#FACE14;
+
+}
+
+.link > img {
+    max-width:100%;
+    width:8rem;
+    height:auto;
+}
