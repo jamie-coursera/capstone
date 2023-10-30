@@ -1,9 +1,10 @@
 #booktitle {
+    margin-top: 5vh;
     text-align: center;
     font-family:"Markazi Text", serif;
     font-size: 3rem;
     font-weight: 300;
-    color:#27472f;
+    color:#495E57;
 }
 
 #bknform {
@@ -18,4 +19,15 @@
     height:auto;
 }
 
+#success {
+    margin:auto auto 10vh auto;
+    text-align: center;
+    font-family:"Karla",serif;
+    width:100%
+}
 
+#fntaws {
+    padding-bottom: 1vh;
+    font-size: 5rem;
+    color: #495E57
+}

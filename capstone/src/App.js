@@ -6,7 +6,6 @@ import Reserve from './pages/Reserve'
 import Order from './pages/Order'
 import Login from './pages/Login'
 import About from './pages/About'
-import BookingConfirmation from './pages/BookingConfirmation'
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
           <Route path='/reserve' element = {<Reserve/>}/>
           <Route path='/order' element = {<Order/>}/>
           <Route path='/login' element = {<Login/>}/>
-          <Route path='/confirmed' element = {<BookingConfirmation/>}/>
         </Routes>
         </Layout>
     </>

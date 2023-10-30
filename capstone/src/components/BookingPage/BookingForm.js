@@ -1,18 +1,25 @@
 import {useState} from 'react';
 import './BookingForm.css'
-function handleSubmit(e) {
-    e.preventDefault();
-}
-function BookingForm({availableTimes,dateta:{date,setDate}}) {
+import {submitAPI} from '../../utils/API.js'
+function BookingForm({availableTimes,dateta:{date,setDate},setCompleted,dispatch}) {
+    function handleSubmit(e) {
+        e.preventDefault();
+        if (submitAPI(e)) {
+        setCompleted(true)
+        }
+    }
     const [time,setTime] = useState({value:null});
     const [guests,setGuests] = useState({value:null});
     const [occasion,setOccasion] = useState({value:'Birthday'});
+    
 
     return (
+        
     <form id="bookingForm" onSubmit={handleSubmit}>
+        
     <section>
         <label htmlFor ="res-date" >Date</label>
-        <input type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value})}}/>
+        <input type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value}); dispatch(new Date(e.target.value))}}/>
     </section>
     <section>
         <label htmlFor ="res-time">Time</label>
