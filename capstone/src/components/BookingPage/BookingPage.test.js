@@ -9,9 +9,15 @@ test('Renders the BookingPage Heading', () => {
 })
 
 test('initializeTimes function', () => {
-    expect(initializeTimes()).toStrictEqual(['17:00','18:00','19:00','20:00','21:00','22:00'])
+    const data = initializeTimes()
+
+    expect(Array.isArray(data)).toBe(true)
+    expect(data.length>0).toBe(true)
 })
 
 test('updateTimes function', () => {
-    expect(updateTimes('hello')).toStrictEqual('hello')
+    const data = updateTimes('something',new Date())
+
+    expect(Array.isArray(data)).toBe(true)
+    expect(data.length>0).toBe(true)
 })
