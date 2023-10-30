@@ -6,7 +6,6 @@ function Layout (props) {
 
     return (
         <React.Fragment>
-
         <Header/>
         <main>{props.children}</main>
         <footer><Footer/></footer>
