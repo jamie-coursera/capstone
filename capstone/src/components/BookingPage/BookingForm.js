@@ -47,7 +47,7 @@ function BookingForm({availableTimes,dateta:{date,setDate},setCompleted,dispatch
 
     </section>
     <section>
-        <input type="submit" id="submitBtn" value="Submit Reservation" disabled={!(time.value==null || date.value==null || new Date(date.value).getUTCMilliseconds() < Date.now() || guests.value==null || occasion.value==null)}/>
+        <input type="submit" aria-label="On Click" id="submitBtn" value="Submit Reservation" disabled={!(time.value==null || date.value==null || new Date(date.value).getUTCMilliseconds() < Date.now() || guests.value==null || occasion.value==null)}/>
     </section>
     </form>
     )

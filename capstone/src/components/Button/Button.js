@@ -4,7 +4,7 @@ function Button({text,link}) {
     return (
 
         <span className="outline">
-            <span className='button-yellow'>
+            <span className='button-yellow' aria-label="On Click">
             <Link to={link}>
                 {text}
             </Link>
