@@ -6,8 +6,11 @@
     outline: 0.05rem solid #a4a4a4;
     font-family:"Karla",serif;
     border-radius: 4px ;
-    margin-bottom: 2vh;
+    
     border:0;
+}
+section {
+    margin-bottom: 2vh;
 }
 
 input, select {
@@ -19,15 +22,16 @@ input, select {
     color:inherit;
   }
 #submitBtn:hover {
-  
       background-color: #495E57 ;
       border-color: #495E57;
       color:#F4CE14;
       -moz-outline-radius: 16px;
       transition: 0.5s;
     }
-  
-  
+#submitBtn:disabled {
+    cursor:not-allowed;
+}
+
 #submitBtn {
     background-color: #F4CE14;
     border:0.5rem solid #F4CE14;
@@ -38,8 +42,15 @@ input, select {
     font-family:"Karla",serif;
     transition: 0.5s;
   }
-  
-  
+
+  .errorMsg {
+    color:#ff0000;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight:350;
+    padding-top: 0;
+    margin-top:0.25vh;
+  }
 
 
 .field:hover {

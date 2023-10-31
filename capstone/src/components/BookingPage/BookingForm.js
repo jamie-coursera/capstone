@@ -19,28 +19,35 @@ function BookingForm({availableTimes,dateta:{date,setDate},setCompleted,dispatch
         
     <section>
         <label htmlFor ="res-date" >Date</label>
-        <input required type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value}); dispatch(new Date(e.target.value))}}/>
+        <input required type="date" className="field" id="res-date" value={date.value} onChange={(e) => {setDate({...date,value:e.target.value,isTouched:true}); dispatch(new Date(e.target.value))}}/>
+        {((date.value==null && date.isTouched) || new Date(date.value).getTime() < Date.now())? <p className="errorMsg">Please specify a valid date</p> : null}
+    
     </section>
     <section>
         <label htmlFor ="res-time">Time</label>
-        <select required id="res-time" className="field" value={time.value} onChange={(e) => {setTime({...time,value:e.target.value})}}>
+        <select required id="res-time" className="field" value={time.value} onChange={(e) => {setTime({...time,value:e.target.value,isTouched:true})}}>
             {availableTimes.map(a => <option>{a}</option>)}
     </select>
+        {(time.value==null || time.value==="") && time.isTouched ? <p className="errorMsg">Please specify an available timeslot</p> : null}
     </section>
     
     <section>
     <label htmlFor="guests">Number of guests</label>
-    <input required type="number" className="field" placeholder="1" min="1" max="10" id="guests" value={guests.value} onChange={(e) => {setGuests({...guests,value:e.target.value})}}/>
+    <input required type="number" className="field"  min="1" max="10" id="guests" value={guests.value} onChange={(e) => {setGuests({...guests,value:e.target.value,isTouched:true})}}/>
+    {(((guests.value==null || guests.value==="") && guests.isTouched))? <p className="errorMsg">Please select a number of guests</p> : null}
     </section>
     <section>
     <label htmlFor ="occasion">Occasion</label>
-    <select id="occasion" className="field" value={occasion.value} onChange={(e) => {setOccasion({...occasion,value:e.target.value})}}>
+    <select required id="occasion" className="field" value={occasion.value} onChange={(e) => {setOccasion({...occasion,value:e.target.value,isTouched:true})}}>
         <option key="birthday">Birthday</option>
         <option key="anniversary">Anniversary</option>
     </select>
+    {((occasion.value==null || occasion.value==="") && occasion.isTouched)? <p className="errorMsg">Please select the occasion</p> : null}
+
+
     </section>
     <section>
-        <input type="submit" id="submitBtn" value="Submit Reservation"/>
+        <input type="submit" id="submitBtn" value="Submit Reservation" disabled={!(time.value==null || date.value==null || new Date(date.value).getUTCMilliseconds() < Date.now() || guests.value==null || occasion.value==null)}/>
     </section>
     </form>
     )
